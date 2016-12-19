@@ -25,7 +25,6 @@ const personNr = (function() {
 	}
 	
 	let generatefrom = (dd, mm, yyyy) => {
-		console.log(arguments.length);
 		if(!dd || !mm || !yyyy) throw new Error('Expected a day, month and year with the following format: dd, mm, yyyy');
 		if(!isValidBirthday(dd, mm, yyyy)) throw new Error('Expected format: dd, mm, yyyy');
 		
